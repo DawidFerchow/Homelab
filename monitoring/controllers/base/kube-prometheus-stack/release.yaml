@@ -37,3 +37,8 @@ spec:
 
         hosts:
           - grs.dawidferchow.net
+
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grs.dawidferchow.net
