@@ -31,3 +31,9 @@ spec:
   values:
     grafana:
       adminPassword: dawid
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+
+        hosts:
+          - grs.dawidferchow.net
