@@ -32,7 +32,7 @@ spec:
           - name: audiobookshelf-audiobooks
             mountPath: /audiobooks
 
-    volumes:
+      volumes:
         - name: audiobookshelf-config
           persistentVolumeClaim:
             claimName: audiobookshelf-config
