@@ -67,7 +67,7 @@ metadata:
 data:
   config.yaml: |
     # Name of the tunnel you want to run
-    tunnel: ldpi
+    tunnel: abshp
 
     credentials-file: /etc/cloudflared/creds/credentials.json
 
