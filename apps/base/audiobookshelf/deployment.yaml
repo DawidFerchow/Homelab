@@ -5,6 +5,10 @@ metadata:
     app: audiobookshelf
   name: audiobookshelf
 spec:
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+    fsGroup: 1000
   replicas: 1
   selector:
     matchLabels:
@@ -16,8 +20,8 @@ spec:
         app: audiobookshelf
     spec:
       containers:
-      - image: ghcr.io/advplyr/audiobookshelf
-        name: audiobookshelf
+        - image: ghcr.io/advplyr/audiobookshelf:2.35.*
+          name: audiobookshelf
 
         envFrom:
           - configMapRef:
@@ -42,4 +46,6 @@ spec:
         - name: audiobookshelf-audiobooks
           persistentVolumeClaim:
             claimName: audiobookshelf-audiobooks
+    securityContext:
+      allowPrivilegeEscalation: false
 status: {}
