@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: audiobookshlef
-  name: audiobookshlef
+    app: audiobookshelf
+  name: audiobookshelf
 spec:
   ports:
   - name: "3005"
@@ -11,7 +11,7 @@ spec:
     protocol: TCP
     targetPort: 3005
   selector:
-    app: audiobookshlef
+    app: audiobookshelf
   type: ClusterIP
 status:
   loadBalancer: {}
