@@ -20,8 +20,8 @@ spec:
         app: audiobookshelf
     spec:
       containers:
-        - image: ghcr.io/advplyr/audiobookshelf:2.35.*
-          name: audiobookshelf
+      - image: ghcr.io/advplyr/audiobookshelf:2.35.*
+        name: audiobookshelf
 
         envFrom:
           - configMapRef:
