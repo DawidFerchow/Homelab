@@ -29,6 +29,10 @@ spec:
               name: audiobookshelf-configmap
         resources: {}
 
+        ports:
+          - containerPort: 3005
+            protocol: TCP
+
         volumeMounts:
           - name: audiobookshelf-config
             mountPath: /config
@@ -36,6 +40,8 @@ spec:
             mountPath: /metadata
           - name: audiobookshelf-audiobooks
             mountPath: /audiobooks
+
+      restartPolicy: always
 
       volumes:
         - name: audiobookshelf-config
