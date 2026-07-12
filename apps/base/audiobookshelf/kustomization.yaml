@@ -6,3 +6,5 @@ resources:
   - service.yaml
   - configmap.yaml
   - storage.yaml
+  - quota.yaml
+  - limit-range.yaml
