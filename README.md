@@ -306,7 +306,7 @@ Planned improvements:
 - add production environment next to staging
 - implement backup and restore strategy
 - add Kubernetes NetworkPolicies
-- improve resource requests and limits
+- ~~improve resource requests and limits~~ - done
 - add readiness and liveness probes where possible
 - improve monitoring and alerting
 
